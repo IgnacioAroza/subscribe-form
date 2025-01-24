@@ -19,7 +19,7 @@ const SubscribeForm = () => {
             <div className="bg-white text-center rounded-3xl p-6 max-w-xs md:max-w-lg lg:max-w-2xl w-full shadow-lg">
                 <div className="mb-4">
                     <img
-                        src="/src/assets/paper-plane.svg"
+                        src="https://res.cloudinary.com/dcxa0ozit/image/upload/v1737749242/paper-plane_qwifcp.svg"
                         alt="Paper Plane Icon"
                         className="mx-auto w-12 h-12 md:w-16 md:h-16"
                     />
