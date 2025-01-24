@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const SubscribeForm = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [email, setEmail] = useState('');
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -10,6 +11,7 @@ const SubscribeForm = () => {
 
     const closeModal = () => {
         setIsModalOpen(false);
+        setEmail('');
     };
 
     return (
@@ -28,6 +30,8 @@ const SubscribeForm = () => {
                         type="email"
                         placeholder="Enter Your Email"
                         className="w-full border-b border-gray-400 focus:outline-none focus:border-black p-2 text-center mb-4"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                     <button
                         type="submit"
